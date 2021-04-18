@@ -17,7 +17,7 @@ model=load_model('crackmodelworking.h5')
 dirs = os.listdir('crackimgs')
 res=''
 for file in dirs:
-    filename='crackimgs\\'+file
+    filename='crackimgs\'+file
     img1 = image.load_img(filename, target_size=(227,227))
     img = image.img_to_array(img1)
     img = img/255
